@@ -18,6 +18,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@unocss/postcss": "^66.6.8",
+    "@unocss/preset-attributify": "^66.6.8",
     "@unocss/reset": "^66.6.8",
     "@unocss/transformer-attributify-jsx": "^66.6.8",
     "eslint": "^9",

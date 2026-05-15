@@ -30,6 +30,9 @@ importers:
       '@unocss/postcss':
         specifier: ^66.6.8
         version: 66.6.8(postcss@8.5.14)
+      '@unocss/preset-attributify':
+        specifier: ^66.6.8
+        version: 66.6.8
       '@unocss/reset':
         specifier: ^66.6.8
         version: 66.6.8
