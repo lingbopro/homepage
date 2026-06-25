@@ -25,7 +25,7 @@ export default function AdaptiveMenu({
         className={classNames(
           'flex flex-row justify-center max-md:flex-col max-md:absolute max-md:right-3 max-md:top-20',
           'max-md:bg-md-surface/80 max-md:dark:bg-md-surface-dark/80 max-md:p-2 children:m-1.5 max-md:min-w-1/5 rounded-lg',
-          'duration-150 opacity-100',
+          'duration-150 opacity-100 z-11',
           show
             ? 'max-md:translate-y-0'
             : 'max-md:opacity-0 max-md:-translate-y-3 max-md:scale-0 max-md:pointer-events-none',

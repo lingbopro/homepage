@@ -1,11 +1,13 @@
 import { Link, Outlet } from 'react-router';
 import Button from './components/base/button';
 import AdaptiveMenu from './components/base/adaptive-menu';
+import { BackgroundHighlight } from './components/background-highlight';
 
 export default function Layout() {
   return (
     <div>
-      <div className="flex justify-center sticky top-0 w-full select-none">
+      <BackgroundHighlight />
+      <div className="flex justify-center sticky top-0 w-full select-none z-10">
         <header className="flex justify-between items-center p-4 w-full md:max-w-[80%] lg:max-w-[70%] bg-md-surface/80 dark:bg-md-surface-dark/80 backdrop-blur-md rounded-b-2xl">
           <div className="font-bold text-md-primary dark:text-md-primary-dark">
             lingbopro's homepage
@@ -24,10 +26,10 @@ export default function Layout() {
           </div>
         </header>
       </div>
-      <div>
+      <div className="z-2">
         <Outlet />
       </div>
-      <footer className="flex justify-stretch p-8 mt-10 w-full bg-md-surface/80 dark:bg-md-surface-dark/80 backdrop-blur-md rounded-t-2xl">
+      <footer className="flex justify-stretch p-8 mt-10 w-full bg-md-surface/80 dark:bg-md-surface-dark/80 backdrop-blur-md rounded-t-2xl z-2">
         <div className="text-md-on-surface-variant dark:text-md-on-surface-variant-dark">
           <p>Copyright © 2026 lingbopro</p>
           <p>
