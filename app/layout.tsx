@@ -1,4 +1,8 @@
 import { Outlet } from 'react-router';
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+} from './components/base/navigation-menu';
 
 export default function Layout() {
   return (
@@ -9,7 +13,15 @@ export default function Layout() {
             lingbopro's homepage
           </div>
           <div className="text-md-on-surface-variant dark:text-md-on-surface-variant-dark">
-            WIP
+            <NavigationMenu>
+              <NavigationMenuItem trigger="Home">Home</NavigationMenuItem>
+              <NavigationMenuItem
+                trigger="About"
+                subItems={[{ title: 'About Us' }, { title: 'Our Team' }]}
+              >
+                About
+              </NavigationMenuItem>
+            </NavigationMenu>
           </div>
         </header>
       </div>

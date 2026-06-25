@@ -13,4 +13,6 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
+  interpolate-size: allow-keywords;
 }

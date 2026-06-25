@@ -107,4 +107,90 @@ primary color: #D93DA7
   --color-md-surface-container-dark: rgb(37 30 33);
   --color-md-surface-container-high-dark: rgb(48 40 43);
   --color-md-surface-container-highest-dark: rgb(59 50 54);
+
+  --animate-enterFromBottom: enterFromBottom 250ms ease;
+  --animate-enterFromTop: enterFromTop 250ms ease;
+  --animate-exitToBottom: exitToBottom 250ms ease;
+  --animate-exitToTop: exitToTop 250ms ease;
+  --animate-scaleIn: scaleIn 200ms ease;
+  --animate-scaleOut: scaleOut 200ms ease;
+  --animate-fadeIn: fadeIn 200ms ease;
+  --animate-fadeOut: fadeOut 200ms ease;
+
+  @keyframes enterFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes enterFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes exitToTop {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  @keyframes exitToBottom: {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  @keyframes scaleIn {
+    0% {
+      opacity: 0;
+      transform: rotateX(-30deg) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+  }
+  @keyframes scaleOut {
+    0% {
+      opacity: 1;
+      transform: rotateX(0deg) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: rotateX(-10deg) scale(0.95);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }
