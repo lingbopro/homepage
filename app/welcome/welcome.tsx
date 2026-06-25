@@ -1,16 +1,32 @@
+import { Link } from 'react-router';
+import Button from '~/components/base/button';
+
 export function Welcome() {
   return (
-    <main className="flex items-center justify-center pt-16 pb-4">
-      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
-        <header className="flex flex-col items-center gap-9">🚧 WIP</header>
-        <div className="max-w-[300px] w-full space-y-6 px-4">
-          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-              This site is working in progress...
-            </p>
-          </nav>
+    <main className="flex flex-col items-stretch justify-center pt-14 pb-14">
+      <section className="flex flex-col items-center justify-center h-[calc(100vh-14rem)]">
+        <h1 className="text-4xl font-bold text-center">你好!</h1>
+        <p className="text-xl text-center mt-4">这里是 lingbopro 的小站!</p>
+        <div className="pt-8 flex justify-center gap-4">
+          <Link to="https://github.com/lingbopro">
+            <Button>前往我的 GitHub</Button>
+          </Link>
+          <Link to="/projects">
+            <Button variant="secondary">我的项目</Button>
+          </Link>
+          <Link to="/about">
+            <Button variant="tertiary">关于我</Button>
+          </Link>
         </div>
-      </div>
+      </section>
+
+      <section className="flex flex-col items-center justify-center mt-14 h-96">
+        <p className="text-2xl text-center pb-4">🚧</p>
+        <h2 className="text-2xl font-bold text-center">
+          Working in Progress...
+        </h2>
+        <p className="text-xl text-center mt-4">过会再来看看吧～</p>
+      </section>
     </main>
   );
 }

@@ -27,9 +27,22 @@ export default function Layout() {
       <div>
         <Outlet />
       </div>
-
-      {/* Just for test, TODO remove this */}
-      <div className="h-[114514px]"></div>
+      <footer className="flex justify-stretch p-8 mt-10 w-full bg-md-surface/80 dark:bg-md-surface-dark/80 backdrop-blur-md rounded-t-2xl">
+        <div className="text-md-on-surface-variant dark:text-md-on-surface-variant-dark">
+          <p>Copyright © 2026 lingbopro</p>
+          <p>
+            {'This site is '}
+            <Link
+              to="https://github.com/lingbopro/homepage"
+              target="_blank"
+              className="text-md-primary dark:text-md-primary-dark decoration-none"
+            >
+              open source
+            </Link>
+            .
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
