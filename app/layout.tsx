@@ -1,7 +1,7 @@
 import { Link, Outlet } from 'react-router';
-import Button from './components/base/button';
-import AdaptiveMenu from './components/base/adaptive-menu';
-import { BackgroundHighlight } from './components/background-highlight';
+import { BackgroundHighlight } from '@/components/background-highlight';
+import { AdaptiveMenu } from '@/components/base/adaptive-menu';
+import { Button } from '@/components/base/button';
 
 export default function Layout() {
   return (

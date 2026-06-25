@@ -1,12 +1,8 @@
-import React from 'react';
-import Button from './button';
 import classNames from 'classnames';
+import React from 'react';
+import { Button } from './button';
 
-export default function AdaptiveMenu({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export function AdaptiveMenu({ children }: { children: React.ReactNode }) {
   const [show, setShow] = React.useState(false);
   return (
     <div className="flex justify-center">

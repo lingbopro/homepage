@@ -1,5 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
+import React from 'react';
 
 export interface ButtonProps extends React.ComponentProps<'button'> {
   variant?: keyof typeof buttonVariants;
@@ -18,7 +18,7 @@ export const buttonVariants = {
   text: 'text-md-on-surface dark:text-md-on-surface-dark hover:bg-md-primary-container/40 dark:hover:bg-md-primary-container-dark/40',
 };
 
-export default function Button({
+export function Button({
   variant = 'primary',
   children,
   className = '',
