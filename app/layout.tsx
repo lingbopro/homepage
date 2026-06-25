@@ -1,4 +1,6 @@
-import { Outlet } from 'react-router';
+import { Link, Outlet } from 'react-router';
+import Button from './components/base/button';
+import AdaptiveMenu from './components/base/adaptive-menu';
 
 export default function Layout() {
   return (
@@ -8,8 +10,17 @@ export default function Layout() {
           <div className="font-bold text-md-primary dark:text-md-primary-dark">
             lingbopro's homepage
           </div>
-          <div className="text-md-on-surface-variant dark:text-md-on-surface-variant-dark">
-            WIP
+          <div className="flex justify-center text-md-on-surface-variant dark:text-md-on-surface-variant-dark">
+            <nav>
+              <AdaptiveMenu>
+                <Link to="/">
+                  <Button variant="text">Home</Button>
+                </Link>
+                <Link to="https://github.com/lingbopro" target="_blank">
+                  <Button variant="text">GitHub</Button>
+                </Link>
+              </AdaptiveMenu>
+            </nav>
           </div>
         </header>
       </div>
