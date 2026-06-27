@@ -4,7 +4,7 @@ export default {
   // Config options...
   ssr: false,
   async prerender() {
-    return ['/'];
+    return ['/', '/404'];
   },
   future: {
     v8_middleware: true,

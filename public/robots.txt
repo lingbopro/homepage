@@ -2,5 +2,4 @@ User-agent: archive.org_bot
 Disallow:
 
 User-agent: *
-Disallow: /assets/
 Disallow: /cdn-cgi/
